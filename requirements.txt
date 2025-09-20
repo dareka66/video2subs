@@ -1,0 +1,12 @@
+faster-whisper
+typer
+srt
+python-dotenv
+ffmpeg-python
+openai
+torch
+sentencepiece
+transformers
+yt-dlp
+requests
+tqdm
