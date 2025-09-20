@@ -22,7 +22,7 @@ Il fournit des sorties cohérentes, nommées d’après le média source :
 
 ## Prérequis
 - Python 3.10+ (testé avec 3.12)
-- `ffmpeg` installé dans le PATH
+- **ffmpeg** installé dans le PATH (outil système, pas une lib Python)
 - (Optionnel) Clé OpenAI si backend `openai`
 
 Linux (Debian/Ubuntu) :
@@ -90,7 +90,6 @@ python cli.py postprocess out/<Nom>.<src>.srt --backend openai --to fr
 ## Dépendances principales
 - faster-whisper
 - yt-dlp
-- ffmpeg-python
 - srt
 - PySide6
 - requests
@@ -113,7 +112,7 @@ pyinstaller --onefile --windowed gui.py
 ## Dépannage
 - 403 GitHub : mauvais compte/token → reconfigurer `git remote`
 - OpenAI BadRequest (temperature) : certains modèles n’acceptent que `temperature=1`
-- Fichiers vides : vérifier ffmpeg
+- Fichiers vides : vérifier que ffmpeg est installé et dans le PATH
 - CUDA : fallback CPU si pas dispo
 
 ## Licence
